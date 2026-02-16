@@ -10,7 +10,7 @@ from sentence_transformers import SentenceTransformer
 # PAGE CONFIG
 # ---------------------------------------
 st.set_page_config(
-    page_title="Gamma Intelligence",
+    page_title="Theta Intelligence",
     layout="wide"
 )
 
@@ -63,7 +63,7 @@ with st.sidebar:
         st.session_state.messages = []
 
     st.markdown("---")
-    st.markdown("Gamma Intelligence")
+    st.markdown("Theta Intelligence")
     st.markdown("Semiconductor and VLSI Engineering Assistant")
     st.markdown("RAG Architecture with Llama 3")
 
@@ -137,7 +137,7 @@ def generate_answer(query):
         context = "\n\n".join(retrieved_chunks)
 
     prompt = f"""
-    You are Gamma Intelligence, a semiconductor materials and VLSI systems expert.
+    You are Theta Intelligence, a semiconductor materials and VLSI systems expert.
     Provide structured, precise, and technically rigorous explanations.
 
     Use context if available.
@@ -169,7 +169,7 @@ def generate_answer(query):
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-st.title("Gamma Intelligence")
+st.title("Theta Intelligence")
 st.subheader("Semiconductor and VLSI Engineering Assistant")
 
 for message in st.session_state.messages:
