@@ -10,7 +10,7 @@ from sentence_transformers import SentenceTransformer
 # PAGE CONFIG
 # ---------------------------------------
 st.set_page_config(
-    page_title="Theta Intelligence",
+    page_title="Gamma Intelligence",
     layout="wide"
 )
 
