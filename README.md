@@ -1,4 +1,4 @@
-# Semiconductor & VLSI AI Assistant
+Gamma Intelligence
 
 A domain-specific AI assistant built using:
 
