@@ -25,5 +25,3 @@ Embedding Model
 FAISS Retrieval
 -
 Llama 3 Generation
--
-Structured Answer
