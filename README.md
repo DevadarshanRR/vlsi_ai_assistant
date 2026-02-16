@@ -19,11 +19,11 @@ A domain-specific AI assistant built using:
 ## Architecture
 
 User Query
-↓
+-
 Embedding Model
-↓
+-
 FAISS Retrieval
-↓
+-
 Llama 3 Generation
-↓
+-
 Structured Answer
