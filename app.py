@@ -63,7 +63,7 @@ with st.sidebar:
         st.session_state.messages = []
 
     st.markdown("---")
-    st.markdown("Theta Intelligence")
+    st.markdown("Gamma Intelligence")
     st.markdown("Semiconductor and VLSI Engineering Assistant")
     st.markdown("RAG Architecture with Llama 3")
 
@@ -127,7 +127,7 @@ def search(query, k=5):
     return [st.session_state.chunks[i] for i in indices[0]]
 
 # ---------------------------------------
-# GENERATE ANSWER (RAG + LLM)
+# GENERATE ANSWER
 # ---------------------------------------
 def generate_answer(query):
     context = ""
@@ -137,7 +137,7 @@ def generate_answer(query):
         context = "\n\n".join(retrieved_chunks)
 
     prompt = f"""
-    You are Theta Intelligence, a semiconductor materials and VLSI systems expert.
+    You are Gamma Intelligence, an expert in semiconductor materials and VLSI systems.
     Provide structured, precise, and technically rigorous explanations.
 
     Use context if available.
@@ -169,7 +169,7 @@ def generate_answer(query):
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-st.title("Theta Intelligence")
+st.title("Gamma Intelligence")
 st.subheader("Semiconductor and VLSI Engineering Assistant")
 
 for message in st.session_state.messages:
