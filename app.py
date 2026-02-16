@@ -127,7 +127,7 @@ def search(query, k=5):
     return [st.session_state.chunks[i] for i in indices[0]]
 
 # ---------------------------------------
-# GENERATE ANSWER
+# GENERATE ANSWER (RAG + LLM)
 # ---------------------------------------
 def generate_answer(query):
     context = ""
@@ -137,7 +137,7 @@ def generate_answer(query):
         context = "\n\n".join(retrieved_chunks)
 
     prompt = f"""
-    You are Gamma Intelligence, an expert in semiconductor materials and VLSI systems.
+    You are Gamma Intelligence, a semiconductor materials and VLSI systems expert.
     Provide structured, precise, and technically rigorous explanations.
 
     Use context if available.
